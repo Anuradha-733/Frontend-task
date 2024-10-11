@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata, character set, and title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container for the main content of the page -->
+    <div class="container">
+        <!-- Page title -->
+        <h1 class="title">YAY! It’s BOGO</h1>
+
+        <!-- First offer block: 1 unit option with a 10% discount -->
+        <div class="offer" id="one-unit-offer">
+            <label>
+                <!-- Radio input for selecting 1 unit -->
+                <input type="radio" name="unit" value="1-unit">
+                <!-- Display for discount and original price -->
+                <span class="discount">1 Unit <span class="tag">10% Off</span></span>
+                <span class="price">$10.00 USD <del>$24.00 USD</del></span>
+            </label>
+            <!-- Hidden dropdowns for selecting size and color for 1 unit -->
+            <div class="dropdowns hidden" id="one-unit-dropdowns">
+                <div class="dropdown">
+                    <label for="size1">Size</label>
+                    <select id="size1">
+                        <!-- Options for sizes (S, M, L) -->
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="color1">Color</label>
+                    <select id="color1">
+                        <!-- Options for colors (Black, White, Red) -->
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Second offer block: 2 unit option with a 20% discount, marked as most popular -->
+        <div class="offer most-popular" id="two-unit-offer">
+            <label>
+                <!-- Radio input for selecting 2 units -->
+                <input type="radio" name="unit" value="2-units">
+                <!-- Tag indicating the most popular option -->
+                <div class="popular-tag">MOST POPULAR</div>
+                <!-- Display for discount and original price -->
+                <span class="discount">2 Unit <span class="tag">20% Off</span></span>
+                <span class="price">$18.00 USD <del>$24.00 USD</del></span>
+            </label>
+            <!-- Hidden dropdowns for selecting size and color for 2 units -->
+            <div class="dropdowns hidden" id="two-unit-dropdowns">
+                <div class="dropdown">
+                    <label for="size2-1">Size</label>
+                    <select id="size2-1">
+                        <!-- Options for sizes (S, M, L) -->
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="color2-1">Color</label>
+                    <select id="color2-1">
+                        <!-- Options for colors (Black, White, Red) -->
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Third offer block: 3 unit option with a 30% discount -->
+        <div class="offer" id="three-unit-offer">
+            <label>
+                <!-- Radio input for selecting 3 units -->
+                <input type="radio" name="unit" value="3-units">
+                <!-- Display for discount and original price -->
+                <span class="discount">3 Unit <span class="tag">30% Off</span></span>
+                <span class="price">$24.00 USD <del>$24.00 USD</del></span>
+            </label>
+            <!-- Hidden dropdowns for selecting size and color for 3 units -->
+            <div class="dropdowns hidden" id="three-unit-dropdowns">
+                <div class="dropdown">
+                    <label for="size3-1">Size</label>
+                    <select id="size3-1">
+                        <!-- Options for sizes (S, M, L) -->
+                        <option value="S">S</option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                    </select>
+                </div>
+                <div class="dropdown">
+                    <label for="color3-1">Color</label>
+                    <select id="color3-1">
+                        <!-- Options for colors (Black, White, Red) -->
+                        <option value="Black">Black</option>
+                        <option value="White">White</option>
+                        <option value="Red">Red</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- Display for free delivery message -->
+        <p class="free-delivery">Free Delivery</p>
+
+        <!-- Display for total price -->
+        <p class="total">Total: $18.00 USD</p>
+
+        <!-- Button to add the offer to the cart -->
+        <button class="add-to-cart">+ Add to Cart</button>
+
+        <!-- Footer section with a powered-by tag -->
+        <p class="powered-by">@Powered by Pumper</p>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
